@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style: none;
+    }
+    p{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        /* display: none; */
+       /*  opacity: 0;*/
+     /* visibility: hidden;*/
+    }
+    p:hover{
+        cursor: pointer;
+    }
+    .span{
+        background-color: red;
+      display: inline-block;
+      width: 300px;
+    }
+</style>
+<body>
+    <!-- 
+        Cách bỏ gạch chân của thẻ a
+         text-decoration: none;
+        Cách bỏ dấu chấm mặc định của li
+        :hover và :active
+        Cách phân biệt
+        1.display:none
+        2.opacity:0
+        3.visibility:hidden
+
+        *********************************************
+        Phân biệt các thẻ 
+        INLINE, BLOCK,INLINE-BLOCK
+        INLINE:
+        ==> độ rộng của element bằng nội dung của text-content.
+        ==> không set được width, height
+        Block : set được width,height và  chiếm hết chiều rộng
+        Inline-block :
+        về mặt hiển thị thì nó sẽ hiển thị theo chiều inline nhưng set các thuộc tính
+        như kiểu block
+     -->
+  
+    <span class="span ">Lorem ipsum dolor sit amet.</span>
+    <span class="span ">Lorem ipsum dolor sit amet.</span>
+
+    <p class="block">block</p>
+</body>
+</html>

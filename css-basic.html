@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <!-- 
+            Box-model trong CSS
+            margin là gì : khoảng cách giữa các khối. element
+            padding là gì : khoảng cách từ border đến content 
+            content
+            border: độ dày của viền 
+            độ rộng của box =padding+border+content 
+            ********************************
+
+     -->
+    <style>
+      .heading{
+        color:  red ;
+        background-color: yellow;
+        width: 500px;
+        height: 200px;
+        padding: 10px; /* padding top = padding-right = padding-bottom= padding-left */
+        padding: 10px 20px; /* padding top  = padding-bottom =10;= padding-left=right=20px */
+        padding: 10px 20px 30px; /*top=10; trái-phải=20px- bottom=30 */
+        padding: 10px 20px 30px 40px; /*top=10; phải=20px- bottom=30 left=40px*/
+        /* border: 1px solid black; */
+        border-width: 5px;
+        border-style: solid;
+        border-color: red;
+        margin-left: 50px;
+        margin-top: 100px;
+
+      }
+    </style>
+<body>
+    <p class="heading">xin chào học viên ra HCM</p>
+</body>
+</html>

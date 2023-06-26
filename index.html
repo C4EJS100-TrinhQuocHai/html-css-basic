@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+    <style>
+    #hcm{
+         color: yellow;
+    }
+    div{
+        background-color: red;
+    }
+   
+    h3{
+        color: rgb(235, 99, 75);
+    }
+    .color{
+        color: hsl(300, 50%, 50%,0.5);
+    }
+    </style>
+<body>
+    <!-- 
+        CSS basic
+        cascading style sheets : ngôn ngữ tạo phong cách cho trang web
+        Cách cách nhúng CSS vào trang web
+        Có 3 cách nhúng CSS
+        Cách 1: inline ==> CSS trực tiếp vào từng dòng code
+        Cách 2: internal ==> CSS vào trong cặp thẻ <style>
+        Cách 3: external ==> tạo file có đuôi .css rồi đi CSS trong file đó
+        Cấu trúc cơ bản của 1 element
+        Gồm có:
+        -thẻ mở thẻ đóng
+        -attribute (thuộc tính vd:class)
+        -content ( tức là nội dung )
+        Class id là các cách để dịnh danh cho element
+        note: class thì có thể có nhiều class
+         id: thì chỉ là duy nhất (giống như CCCD )
+         đỐi với class khi CSS: .tên class
+         đối với ID khi CSS :#tên id 
+         Độ ưu tiên trong CSS từ bé đến lớn
+         element(thẻ tag)--class-id-inline-important!
+         ----------------------------------
+         màu trong CSS
+         Các cách CSS color
+         C1: viết tên màu theo tên tiếng anh :red,green,blue,white,black....
+         C2: viết theo RGB( red-green-blue)
+         C3: viết theo RGBA (red-green-blue-anpha(opacity))
+         C4: viết theo kiểu hexa
+         C5: hsl (hue-saturation-lightness)
+         -- đỏ-dacam-vàng-lục-lam-chàm-tím
+         C6: hsla (hue-saturation-lightness-anpha(opacity))
+         ------------------------------
+         kĩ thuật emmet : cách viết nhanh ,viết tắt
+     -->
+     <h1 class="style" style="color: red;font-size: 50px;"> xin chào học viên ra HCM!</h1>
+     <div class="style">
+        internal
+     </div>
+     <div class="title" id="hcm">hcm</div> <!-- element  -->
+     <p class="heading1 heading-h2 "   >heading1</p>
+     <h2 class="heading1">heading-h2</h2>
+     <p class="heading2" >heading2</p>
+     <h3 class="h3" id="h3" style="color: yellow;"> độ ưu tiên trong CSS </h3>
+     <h5  class="color"> màu trong CSS </h5>
+     <div class="heading"> heading1 </div>
+    
+    
+  
+</body>
+</html>

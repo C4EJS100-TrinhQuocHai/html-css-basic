@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* 
+            box-sizing: content-box
+            width :padding +content;
+         */
+   }
+
+    /* 
+        Cách RESET CSS: tức là đưa về trạng thái mặc định
+        *************************************
+        Bộ chọn selector
+        1.thẻ tag-name(element)
+        2.class
+        3.id
+        4.class1.class2 : những element có 2 class thì ăn theo 
+        5.class1 .class2 : class2 được chứa trong class1
+        6.class1>.class2 : class2 phải là con của class1
+        7.div,p : đồng thời cả 2 thằng đều ăn 
+        8.class1+class2 : class2 phải là anh em liền kề với class1
+        9.class1~class2 : class2 chỉ cần là anh em với class1 không cần liền kề
+        10. nth-child 
+        ...........
+        
+
+     */
+    .heading>.title{
+        color: red;
+    }
+    h3,h4{
+        color: red;
+    }
+    .h5~.h5{
+            color: yellow;
+    }
+    li:nth-child(odd){
+        color: red;
+    }
+</style>
+<body>
+   <div class="heading">
+        <div>
+            <div>
+                <p class="title">
+                    title
+                </p>
+            </div>
+        </div>
+        <p class="title">
+            title_pppp
+        </p>
+   </div>
+    <p class="title">
+        title1
+    </p>
+    <h3> thẻ h3</h3>
+    <h4> đây là h4 </h4>
+    <h5 class="h5">đây là thẻ h5</h5>
+    <h5 class="h5">đây là thẻ h555555</h5>
+    <div>div vu vơ </div>
+    <h5 class="h5">đây là thẻ h5555556666666</h5>
+
+  <ul>
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+    <li>item4</li>
+    <li>item5</li>
+    <li>item6</li>
+    <li>item7</li>
+    <li>item8</li>
+  </ul>
+</body>
+</html>
